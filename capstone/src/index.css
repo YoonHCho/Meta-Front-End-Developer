@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-active {
+  color: #F4CE14 !important;
+}
+
+.logo-height {
+  width: 20rem
+}
+
+.nav-font {
+  font-size: x-large;
+}
+
+.lemon-primary-dark {
+  background-color: #495e57;
+}
+
+.white {
+  color: white;
+}
+
+.pd {
+  padding: 1rem;
+}
+
+.footer-logo {
+  width: 7rem;
+}
+
+.footer-block {
+  display: block;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full,
+.col-half,
+.col-3rd {
+  flex-basis: 100%;
+}
+
+/* .col-half {
+  flex-basis: 50%
+}
+
+.col-3rd {
+  flex-basis: 33%;
+  padding: 1rem;
+} */
+
+.block {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.foot-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 340px) {
+  .col-half {
+      flex-basis: 50%
+    }
+}
+@media only screen and (min-width: 670px) {
+  .col-3rd {
+      flex-basis: 33%
+    }
+}

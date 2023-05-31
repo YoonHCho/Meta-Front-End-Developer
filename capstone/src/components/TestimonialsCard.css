@@ -1,0 +1,31 @@
+.test-img {
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.light {
+  background: white;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.col,
+.col-50,
+.col-25 {
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 670px) {
+  .col-50 {
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .col-50 {
+    flex-basis: 22%;
+  }
+}

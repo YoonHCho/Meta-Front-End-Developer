@@ -13,6 +13,8 @@ code {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -32,6 +34,10 @@ code {
   background-color: #495e57;
 }
 
+.lemon-primary-lemon {
+  color: #F4CE14;
+}
+
 .white {
   color: white;
 }
@@ -40,8 +46,24 @@ code {
   padding: 1rem;
 }
 
+.pdr-65p {
+  padding-right: 25%;
+}
+
 .footer-logo {
   width: 7rem;
+}
+
+.reserve-btn {
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  background: #F4CE14;
+}
+
+.txt-dec-none {
+  text-decoration: none;
+  color: #495e57;
 }
 
 .footer-block {
@@ -61,15 +83,6 @@ code {
   flex-basis: 100%;
 }
 
-/* .col-half {
-  flex-basis: 50%
-}
-
-.col-3rd {
-  flex-basis: 33%;
-  padding: 1rem;
-} */
-
 .block {
   display: block;
   color: white;
@@ -79,7 +92,27 @@ code {
 
 .foot-center {
   text-align: center;
-  margin-top: 1rem;
+}
+
+#special-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#hero {
+  width: 100%;
+  height: 312px;
+  background: linear-gradient(rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.455)), url("./images/food/hero.jpg") no-repeat center / cover;
+  overflow: hidden;
+  border-radius: 15px;
+  /* background-size: cover; */
+  /* object-fit: fit; */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (min-width: 340px) {
@@ -91,4 +124,7 @@ code {
   .col-3rd {
       flex-basis: 33%
     }
+  .pdr-65p {
+    padding-right: 55%;
+  }
 }

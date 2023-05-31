@@ -8,35 +8,37 @@ const style = {
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light pd">
-      <NavLink className="navbar-brand" to="/">
-        <img className="logo-height img-fluid" src={LLLogo} alt="Little Lemon Logo" />
-      </NavLink>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav mx-auto">
-          <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/">
-            Home
-          </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/about">
-            About
-          </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/menu">
-            Menu
-          </NavLink>
-          <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/reserve">
-            Reserve
-          </NavLink>
+    <nav className="navbar navbar-expand-md navbar-light bg-light pd mb-3">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          <img className="logo-height img-fluid" src={LLLogo} alt="Little Lemon Logo" />
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav mx-auto">
+            <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/">
+              Home
+            </NavLink>
+            <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/about">
+              About
+            </NavLink>
+            <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/menu">
+              Menu
+            </NavLink>
+            <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/reserve">
+              Reserve
+            </NavLink>
+          </div>
         </div>
       </div>
     </nav>

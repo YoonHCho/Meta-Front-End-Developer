@@ -6,10 +6,10 @@ const Footer = () => {
     <>
       <footer className="pd lemon-primary-dark white row">
         <div className="row">
-          <div className="col-full col-half col-3rd">
+          <div className="col-full col-half col-3rd mb-5 foot-center">
             <img className="footer-logo" src={FooterImg} alt="Little lemon footer pic" />
           </div>
-          <div className="col-full col-half col-3rd">
+          <div className="col-full col-half col-3rd mb-5 foot-center">
             <h4>SITEMAP</h4>
             <Link className="block" to="/">
               Home
@@ -24,7 +24,7 @@ const Footer = () => {
               Reserve
             </Link>
           </div>
-          <div className="col-full col-half col-3rd">
+          <div className="col-full col-half col-3rd mb-5 foot-center">
             <h4>CONTACT US</h4>
             <address>
               123 Where Am I Street
@@ -40,8 +40,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="col-full">
-          <p className="foot-center">&copy; 2023 Coursera Meta Front-End Developer by Yoon.</p>
+        <div className="col-full foot-center">
+          <p>&copy; 2023 Coursera Meta Front-End Developer by Yoon.</p>
         </div>
       </footer>
     </>

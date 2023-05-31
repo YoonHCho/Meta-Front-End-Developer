@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
 import Reserve from "./pages/Reserve";
+import ConfirmRes from "./pages/ConfirmRes";
 import Error from "./pages/Error";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="menu" element={<Menu />} />
             <Route path="reserve" element={<Reserve />} />
+            <Route path="reserve-confirm" element={<ConfirmRes />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>

@@ -3,6 +3,7 @@ import Special from "../components/Special";
 import brus from "../images/food/bruschetta.jpg";
 import greek from "../images/food/greekSalad.jpg";
 import dessert from "../images/food/dessert.jpg";
+import Testimonials from "../components/Testimonials";
 
 const data = [
   {
@@ -30,6 +31,7 @@ const Home = () => {
     <>
       <Hero />
       <Special data={data} />
+      <Testimonials />
     </>
   );
 };

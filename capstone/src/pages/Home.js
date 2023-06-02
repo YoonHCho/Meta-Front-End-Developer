@@ -1,8 +1,8 @@
 import Hero from "../components/Hero";
 import Special from "../components/Special";
-import brus from "../images/food/bruschetta.jpg";
-import greek from "../images/food/greekSalad.jpg";
-import dessert from "../images/food/dessert.jpg";
+import brus from "../images/specials/bruschetta.jpg";
+import greek from "../images/specials/greekSalad.jpg";
+import dessert from "../images/specials/dessert.jpg";
 import Testimonials from "../components/Testimonials";
 
 const data = [

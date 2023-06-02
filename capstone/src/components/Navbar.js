@@ -3,7 +3,7 @@ import LLLogo from "../images/logos/littleLemonLogo.png";
 
 const style = {
   navActive: "nav-font px-3 nav-item nav-link nav-active",
-  navNonActive: "nav-font px-3 nav-item nav-link",
+  navNonActive: "nav-font px-3 nav-item nav-link hover",
 };
 
 const Navbar = () => {

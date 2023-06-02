@@ -1,0 +1,11 @@
+.about-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-pic {
+    max-width: 456px
+  }
+}

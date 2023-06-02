@@ -1,8 +1,10 @@
 const ConfirmRes = () => {
   return (
     <>
-      <div>ConfirmRes</div>
-      <p>Reservation Confirmed</p>
+      <div className="container">
+        <h2>ConfirmRes</h2>
+        <p>Reservation Confirmed</p>
+      </div>
     </>
   );
 };

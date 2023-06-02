@@ -1,5 +1,7 @@
 import "./Card.css";
 
+const lorem = "Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
+
 const Card = ({ data }) => {
   return (
     <>
@@ -11,7 +13,7 @@ const Card = ({ data }) => {
           </span>
           <div className="pd white">
             <h5>{data.name}</h5>
-            <p>{data.description}</p>
+            <p>{data.description ? data.description : lorem}</p>
           </div>
         </div>
       </div>

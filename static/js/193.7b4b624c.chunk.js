@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcapstone=self.webpackChunkcapstone||[]).push([[193],{9193:function(n,e,c){c.r(e);var s=c(184);e.default=function(){return(0,s.jsx)(s.Fragment,{children:(0,s.jsxs)("section",{className:"container",children:[(0,s.jsx)("h1",{children:"404"}),(0,s.jsx)("p",{children:"We can't find what you are looking for"})]})})}}}]);
+//# sourceMappingURL=193.7b4b624c.chunk.js.map

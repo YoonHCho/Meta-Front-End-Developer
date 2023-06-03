@@ -24,6 +24,7 @@ code {
 
 .hover:hover {
   background-color: #F4CE14;
+  border-radius: 15px;
 }
 
 .logo-height {

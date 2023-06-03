@@ -26,6 +26,8 @@ const Reserve = () => {
     line3: "",
   });
 
+  const minDate = new Date().toJSON().slice(0, 10);
+
   const isGood = () => {
     return name.firstName && name.lastName && validateEmail(name.email) && date && time && guests && occasion;
   };
@@ -50,10 +52,10 @@ const Reserve = () => {
 
   const handleGuests = e => {
     const num = Number(e.target.value);
-    if (num < 0) {
-      setGuests(0);
-    } else if (num > 84) {
-      setGuests(84);
+    if (num < 1) {
+      setGuests(1);
+    } else if (num > 20) {
+      setGuests(20);
     } else {
       setGuests(num);
     }
@@ -92,6 +94,7 @@ const Reserve = () => {
                 className="form-control"
                 value={name.firstName}
                 onChange={handleName}
+                required={true}
               />
             </div>
             <div className="col-md-4 mb-3">
@@ -106,6 +109,7 @@ const Reserve = () => {
                 className="form-control"
                 value={name.lastName}
                 onChange={handleName}
+                required={true}
               />
             </div>
             <div className="col-md-4 mb-3">
@@ -120,7 +124,7 @@ const Reserve = () => {
                 className="form-control"
                 value={name.email}
                 onChange={handleName}
-                required
+                required={true}
               />
             </div>
 
@@ -128,7 +132,7 @@ const Reserve = () => {
               <label htmlFor="date" className="form-label">
                 Date
               </label>
-              <input type="date" name="form-control" id="date" className="form-control" value={date} onChange={handleDate} />
+              <input type="date" name="form-control" id="date" className="form-control" value={date} onChange={handleDate} min={minDate} />
             </div>
 
             <div className="col-md-6 mb-3">
